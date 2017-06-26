@@ -1,20 +1,3 @@
-<?php
-
-string username= "a";
-string password= "a";
-
-if(isset($_POST['Login'])){
-
-if(strtolower($_POST["username"])=="ChangeThis" && $_POST["password"]=="ChangeThis"){
-session_start();
-$_SESSION['logged_in'] = TRUE;
-header("Location: ./search.html");
-
-}else {
-$error= "Login failed !";
-}
-}
-?>
 <!DOCTYPE html>
 <html>
 <title>Homepage</title>
